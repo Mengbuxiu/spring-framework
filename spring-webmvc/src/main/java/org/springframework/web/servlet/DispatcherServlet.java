@@ -995,6 +995,7 @@ public class DispatcherServlet extends FrameworkServlet {
 	 * <p>The handler will be obtained by applying the servlet's HandlerMappings in order.
 	 * The HandlerAdapter will be obtained by querying the servlet's installed HandlerAdapters
 	 * to find the first that supports the handler class.
+	 * 所有HTTP方法都由此方法处理。 由HandlerAdapters或处理程序自行决定哪些方法可以接受。
 	 * <p>All HTTP methods are handled by this method. It's up to HandlerAdapters or handlers
 	 * themselves to decide which methods are acceptable.
 	 * @param request current HTTP request
